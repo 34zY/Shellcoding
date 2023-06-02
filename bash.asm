@@ -18,4 +18,4 @@ _start:
 	push 0x73680000
 	mov rbx, rsp
 	mov al, 0xb ;; 0xb execve
-	syscall
+	syscall ;; int 0x80
