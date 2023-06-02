@@ -1,4 +1,5 @@
 ;; @Eazy
+;; nasm -f elf64 bash.asm -o bash.o && ld bash.o -o baash
 
 bits 64
 
