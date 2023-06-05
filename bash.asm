@@ -20,4 +20,4 @@ _start:
 	
 	mov rbx, rsp
 	mov al, 0xb ;; 0xb execve
-	int 0x80
+	syscall
