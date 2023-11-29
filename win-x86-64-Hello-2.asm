@@ -26,12 +26,12 @@ global _start
 		sub rsp, 32
 		sub rsp, 8
 
-							;							 ___________
+							;							 
 		push rax            ; [1]                       [_   rax   _] 
-		push hi             ; [2]						[_   hi    _]
-		push written        ; [3]						[_ written _]
-		push 11             ; [4] 						[_   11    _]
-							;							   ‾‾‾|‾‾‾
+		push hi             ; [2]			[_   hi    _]
+		push written        ; [3]			[_ written _]
+		push 11             ; [4] 			[_   11    _]
+				    ;                   	      |				
 		pop  r8             ; [4] ;; mov r8, 11  <-----------{|] LIFO
 		pop  r9             ; [3] ;; mov r9, written <-------{|]
 		pop  rdx            ; [2] ;; mov rdx, hi <-----------{|]
